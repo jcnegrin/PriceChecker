@@ -29,7 +29,7 @@ CREATE TABLE
         id VARCHAR(255),
         monto FLOAT NOT NULL,
         medida SMALLINT,
-        unidad ENUM ('Ud', 'Kg'),
+        unidad VARCHAR(20),
         codigoProducto VARCHAR(255),
         FOREIGN KEY (codigoProducto) REFERENCES Producto (id)
     )
